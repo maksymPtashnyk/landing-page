@@ -1,0 +1,27 @@
+.product {
+  &__photo {
+    width: 100%;
+
+    transition: all $effectDuration;
+
+    .recommended__product:hover & {
+      transform: scale(1.1);
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px #9e9e9e;
+    }
+
+    &__title {
+
+      font-size: 18px;
+      line-height: 140%;
+    }
+
+    &__category {
+      font-family: $second-text-font;
+    }
+
+    &__price {
+      font-weight: 700;
+    }
+  }
+}
